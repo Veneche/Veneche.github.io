@@ -11,7 +11,7 @@ i:hover {
 /*navigation header styling*/
 
 .navigation-bar {
-    /* width: 100vw; */
+    width: 100vw;
     top: 0;
     height: 50px;
     background: linear-gradient(180deg, #6a4885, #9574b0);
@@ -43,13 +43,11 @@ i:hover {
             color: #f3f0f5;
             text-decoration: none;
             font-size: 1.2rem;
-            transform: scale(1.2);
         }
 
         .navigation-links li a {
             color: #ccc5d1;
             font-weight: bold;
-            text-decoration: none;
         }
 
     .navigation-links .nav-home {
@@ -202,19 +200,25 @@ i:hover {
         padding-bottom: 2rem;
     }
 
-    /* .about-container .about-attributes {
-        
-    } */
+    .about-container .about-attributes {
+        /*grid-column-start: 1;
+            grid-column-end: 2;
+            border-right: 0.1px solid #ccc5d1;*/
+    }
 
     .about-container .about-competencies {
-        
+        /*grid-column-start: 2;
+            grid-column-end: 3;
+            border-right: 0.1px solid #ccc5d1;
+            padding-bottom: 2rem;*/
         padding-left: 1rem;
         padding-right: 1rem;
     }
 
-    /* .about-container .about-hobbies {
-        
-    } */
+    .about-container .about-hobbies {
+        /*grid-column-start: 3;
+            grid-column-end: 4;*/
+    }
 
     .about-container li {
         list-style: none;
@@ -339,7 +343,7 @@ i:hover {
     text-align: center;
     padding: 2rem 15% 2rem 15%;
     display: grid;
-    grid-template-columns: 270px 270px 270px 270px;
+    grid-template-columns: 25% 25% 25% 25%;
     padding-bottom: 5rem;
     grid-gap: 10px;
 }
@@ -347,7 +351,7 @@ i:hover {
     .projects-container img {
         height: 250px;
         width: 270px;
-        /* margin: 10px; */
+        margin: 10px;
     }    
 
     .projects-container .projects-header {
@@ -624,7 +628,7 @@ i:hover {
     background-color: #f3f0f5;
     color: #4f2969;
     text-align: center;
-    padding-bottom: 2rem;
+    padding-bottom: 5rem;
 }
 
 .footer-navigation-links {
@@ -649,7 +653,6 @@ i:hover {
             color: #4f2969;
             font-weight: bold;
             /*font-size: 1.1rem;*/
-            text-decoration: none;
         }
 
 .footer .copyright {
