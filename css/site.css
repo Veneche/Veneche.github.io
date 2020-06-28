@@ -1,0 +1,2062 @@
+
+/*VLJansen styling*/
+body {
+    font-family: 'Roboto Mono', monospace;
+}
+
+i:hover {
+    transform: scale(1.2);
+}
+
+/*navigation header styling*/
+
+.navigation-bar {
+    width: 100vw;
+    top: 0;
+    height: 50px;
+    background: linear-gradient(180deg, #6a4885, #9574b0);
+}
+
+.navigation-links-div {
+    padding-top: 0.1rem;
+}
+
+.navigation-links {
+    list-style: none;
+    margin-top: 0.6rem;
+}
+
+    .navigation-links .nav-mobile-icon-li {
+        display: none;
+    }
+
+    .navigation-links .nav-mobile-icon {
+        font-size: 1.4rem;
+    }
+
+    .navigation-links li {
+        display: inline;
+        padding: 0 2rem 0 0;
+    }
+
+        .navigation-links li a:hover {
+            color: #f3f0f5;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .navigation-links li a {
+            color: #ccc5d1;
+            font-weight: bold;
+        }
+
+    .navigation-links .nav-home {
+        font-size: 1.4rem;
+        color: #f3f0f5;
+    }
+
+        .navigation-links .nav-home:hover {
+            font-size: 1.4rem;
+        }
+
+.nav-home .nav-home-extra {
+    color: white;
+}
+
+
+/*Main content styling*/
+.main-content {
+    padding-bottom: 120px;
+}
+
+.page-content {
+    position: relative;
+    min-height: 100vh;
+}
+
+
+/*Hero styling*/
+.hero-container {
+    background-color: #f3f0f5;
+    width: 100vw;
+    position: relative;
+    padding-top: 1px;
+    padding-bottom: 2rem;
+    color: #4f2969;
+}
+
+.hero-content {
+    display: grid;
+    column-count: 3;
+    grid-template-columns: 30% 35% 35%;
+    /*width: 70vw;*/
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.hero-img {
+    background-image: url("../imgs/VLJansen_hero_crop.jpg");
+    border-radius: 40%;
+    display: block;
+    margin: 1rem auto 1rem auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-size: cover;
+    background-position: center;
+    width:250px;
+    height:250px;
+
+    /*width: 10vw;
+        height: 19vh;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 4;*/
+}
+
+.hero-name {
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 8px #6a4885;
+    /*font-size: 2.8rem;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;*/
+}
+
+.hero-container:hover .hero-name {
+    animation-name: rotate;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rotate {
+    25% {
+        transform: rotate(5deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+}
+
+.hero-title {
+    font-style: italic;
+    text-align: center;
+    /*font-size: 1.1rem;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;*/
+}
+
+
+.hero-content .contact-email {
+    margin-left: auto;
+    /*grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;*/
+    text-align: center;
+}
+
+.hero-content .contact-phone {
+    /*margin-right: auto;
+        margin-left: 2rem;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;*/
+    text-align: center;
+}
+
+.hero-content i {
+    /*width: 3vw;
+        margin: 1rem auto;*/
+    height: 5vh;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.hero-content .icon-email {
+    background-image: url("https://img.icons8.com/nolan/64/email.png");
+}
+
+.hero-content .icon-phone {
+    background-image: url("https://img.icons8.com/nolan/64/phone.png");
+}
+
+
+
+
+/*about styling*/
+
+.about-container {
+    width: 100vw;
+    background-color: #4f2969;
+    color: #f3f0f5;
+    text-align: center;
+    /*padding: 2rem 15% 2rem 15%;*/
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+    .about-container .about-header {
+        margin-bottom: 2rem;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        font-weight: bold;
+        text-shadow: 3px 3px 20px #f3f0f5;
+    }
+
+    .about-container:hover .about-header {
+        animation-name: rotate;
+        animation-duration: 1.5s;
+        animation-fill-mode: forwards;
+    }
+
+    .about-container .about-bio {
+        /*width: 60vw;*/
+        margin-left: auto;
+        margin-right: auto;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        padding-bottom: 2rem;
+    }
+
+    .about-container .about-attributes {
+        /*grid-column-start: 1;
+            grid-column-end: 2;
+            border-right: 0.1px solid #ccc5d1;*/
+    }
+
+    .about-container .about-competencies {
+        /*grid-column-start: 2;
+            grid-column-end: 3;
+            border-right: 0.1px solid #ccc5d1;
+            padding-bottom: 2rem;*/
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .about-container .about-hobbies {
+        /*grid-column-start: 3;
+            grid-column-end: 4;*/
+    }
+
+    .about-container li {
+        list-style: none;
+    }
+
+    .about-container ul {
+        padding-left: 0;
+    }
+
+.about-subheadings {
+    font-weight: bold;
+    /*font-size: 1.3rem;*/
+    text-decoration: underline;
+    margin-bottom: 0.5rem;
+}
+
+
+/*tech skills styling*/
+
+.techskills-container {
+    width: 100vw;
+    background-color: #f3f0f5;
+    color: #4f2969;
+    text-align: center;
+    /*padding: 2rem 15% 2rem 15%;*/
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding-bottom: 5rem;
+}
+
+    .techskills-container .techskills-header {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        font-weight: bold;
+        text-shadow: 3px 3px 10px #6a4885;
+    }
+
+    .techskills-container:hover .techskills-header {
+        animation-name: rotate;
+        animation-duration: 1.5s;
+        animation-fill-mode: forwards;
+    }
+
+    .techskills-container .techskills-beginner {
+        margin-top: 3rem;
+        /*font-size: 1.4rem;*/
+        text-decoration: underline;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        font-weight: bold;
+    }
+
+    /*.techskills-container .techskills-html {
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+        .techskills-container .techskills-css {
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+
+        .techskills-container .techskills-js {
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+
+        .techskills-container .techskills-bootstrap {
+            grid-column-start: 4;
+            grid-column-end: 5;
+        }
+
+        .techskills-container .techskills-csharp {
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+        .techskills-container .techskills-asp {
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+
+        .techskills-container .techskills-vs {
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }*/
+
+    .techskills-container .techskills-intro {
+        margin-top: 3rem;
+        /*font-size: 1.4rem;*/
+        text-decoration: underline;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        font-weight: bold;
+    }
+
+    /*.techskills-container .techskills-sqlserver {
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+        .techskills-container .techskills-jquery {
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+
+        .techskills-container .techskills-nodejs {
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+
+        .techskills-container .techskills-mongodb {
+            grid-column-start: 4;
+            grid-column-end: 5;
+        }*/
+
+    .techskills-container i {
+        /*width: 3vw;
+            height: 5vh;
+            margin: 1rem auto;*/
+        display: block;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .techskills-container .icon-html {
+        background-image: url("../imgs/html5.svg");
+    }
+
+    .techskills-container .icon-css {
+        background-image: url("../imgs/css3.svg");
+    }
+
+    .techskills-container .icon-js {
+        background-image: url("https://img.icons8.com/color/48/000000/javascript.png");
+    }
+
+    .techskills-container .icon-bootstrap {
+        background-image: url("https://img.icons8.com/color/48/000000/bootstrap.png");
+    }
+
+    .techskills-container .icon-csharp {
+        background-image: url("https://img.icons8.com/color/50/000000/c-sharp-logo.png");
+    }
+
+    .techskills-container .icon-asp {
+        background-image: url("../imgs/asp.svg");
+    }
+
+    .techskills-container .icon-vs {
+        background-image: url("../imgs/vs.svg");
+    }
+
+    .techskills-container .icon-sqlserver {
+        background-image: url("https://img.icons8.com/color/48/000000/microsoft-sql-server.png");
+    }
+
+    .techskills-container .icon-jquery {
+        background-image: url("https://img.icons8.com/ios-filled/50/000000/jquery.png");
+    }
+
+    .techskills-container .icon-nodejs {
+        background-image: url("https://img.icons8.com/color/48/000000/nodejs.png");
+    }
+
+    .techskills-container .icon-mongodb {
+        background-image: url("https://img.icons8.com/color/48/000000/mongodb.png");
+    }
+
+
+/*projects styling*/
+
+.projects-container {
+    width: 100vw;
+    background-color: #4f2969;
+    color: #f3f0f5;
+    text-align: center;
+    padding: 2rem 15% 2rem 15%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding-bottom: 5rem;
+    grid-gap: 10px;
+}
+
+    .projects-container img {
+        height: 250px;
+        width: 270px;
+        margin: 10px;
+    }    
+
+    .projects-container .projects-header {
+        margin-bottom: 2rem;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        font-weight: bold;
+        text-shadow: 3px 3px 20px #f3f0f5;
+    }
+
+    .projects-container:hover .projects-header {
+        animation-name: rotate;
+        animation-duration: 1.5s;
+        animation-fill-mode: forwards;
+    }
+
+    .projects-container .projects-status {
+        font-style: italic;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        margin-bottom: 1.5rem;
+    }
+
+    .projects-container .projects-macros {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .projects-container .projects-portfolio {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .projects-container .projects-webapps {
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+
+    .projects-container .projects-app {
+        grid-column-start: 4;
+        grid-column-end: 5;
+    }
+
+    .projects-container .colourGame img{
+        height: 30vh;
+        border-radius: 20%;
+    }
+
+    .projects-tributepg {
+        position: relative;
+    }
+
+    .projects-funpg {
+        position: relative;
+    }
+
+.projects-counterpg {
+    position: relative;
+}
+
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #f3f0f5;
+    border-radius: 15px;
+}
+
+    .projects-tributepg:hover .overlay {
+        opacity: 0.8;
+    }
+
+    .projects-funpg:hover .overlay {
+        opacity: 0.8;
+    }
+
+.projects-counterpg:hover .overlay {
+    opacity: 0.8;
+}
+
+    .overlay-text {
+        color: #6a4885;
+        font-size: 1rem;
+        font-weight: bold;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .projects-container .projects-tributepg #img-tributepg {
+        max-width: 100%;
+        border-radius: 15px;
+        box-shadow: 2px 2px 5px lightslategrey;
+    }
+
+.projects-container .projects-funpg #img-funpg {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px lightslategrey;
+}
+
+.projects-container .projects-counterpg #img-counterpg {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px lightslategrey;
+}
+
+/*education styling*/
+
+.education-container {
+    width: 100vw;
+    background-color: #f3f0f5;
+    color: #4f2969;
+    text-align: center;
+    padding: 2rem 15% 2rem 15%;
+    /*display: grid;*/
+    grid-template-columns: 50% 50%;
+    padding-bottom: 5rem;
+}
+
+    .education-container .education-header {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        font-weight: bold;
+        text-shadow: 3px 3px 10px #6a4885;
+    }
+
+    .education-container:hover .education-header {
+        animation-name: rotate;
+        animation-duration: 1.5s;
+        animation-fill-mode: forwards;
+    }
+
+    .education-container i {
+        /*width: 5vw;
+            height: 8vh;*/
+        display: block;
+        background-repeat: no-repeat;
+        margin: 2rem auto 0 auto;
+        background-size: contain;
+    }
+
+    .education-container .education-coding {
+        background-image: url("https://img.icons8.com/nolan/64/code.png");
+    }
+
+    .education-container .education-chem {
+        background-image: url("https://img.icons8.com/nolan/64/test-tube.png");
+    }
+
+    .education-container .course-name {
+        /*font-size: 1.3rem;*/
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+
+    .education-container .course-year {
+        /*font-size: 1rem;*/
+        margin-bottom: 0;
+    }
+
+    .education-container .course-institution {
+        /*font-size: 1.1rem;*/
+        font-style: italic;
+    }
+
+
+/*work experience styling*/
+
+.work-container {
+    width: 100vw;
+    background-color: #4f2969;
+    color: #f3f0f5;
+    text-align: center;
+    /*padding: 2rem 15% 2rem 15%;
+        display: grid;*/
+    grid-template-columns: 50%;
+    padding-bottom: 5rem;
+}
+
+    .work-container .work-header {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        font-weight: bold;
+        text-shadow: 3px 3px 20px #f3f0f5;
+    }
+
+    .work-container:hover .work-header {
+        animation-name: rotate;
+        animation-duration: 1.5s;
+        animation-fill-mode: forwards;
+    }
+
+    .work-container .work-developer {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .work-container .work-chemist {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        margin-left: auto;
+        /*margin-right: 2rem;*/
+    }
+
+    .work-container .work-labtech {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        margin-right: auto;
+        /*margin-left: 2rem;*/
+    }
+
+    .work-container .work-demi {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .work-container .work-title {
+        /*font-size: 1.4rem;*/
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+
+    .work-container .work-company {
+        /*font-size: 1.1rem;*/
+        font-style: italic;
+        margin-bottom: 0;
+    }
+
+    .work-container .work-dates {
+        /*font-size: 1rem;*/
+    }
+
+    .work-container i {
+        /*width: 5vw;
+            height: 8vh;*/
+        display: block;
+        background-repeat: no-repeat;
+        margin: 2rem auto 0 auto;
+        background-size: contain;
+    }
+
+    .work-container .icon-dev {
+        background-image: url("https://img.icons8.com/nolan/64/code.png");
+    }
+
+    .work-container .icon-chem {
+        background-image: url("https://img.icons8.com/nolan/64/test-tube.png");
+    }
+
+    .work-container .icon-demi {
+        background-image: url("https://img.icons8.com/nolan/64/pen.png");
+    }
+
+
+/*footer styling*/
+.footer {
+    position: absolute;
+    bottom: 0;
+    height: 120px;
+    width: 100vw;
+    background-color: #f3f0f5;
+    color: #4f2969;
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+.footer-navigation-links {
+    list-style: none;
+    margin-top: 0.6rem;
+    /*margin-bottom: 2rem;*/
+    padding-left: 0;
+}
+
+    .footer-navigation-links li {
+        display: inline;
+        /*padding: 0 2rem 0 0;*/
+    }
+
+        .footer-navigation-links li a:hover {
+            color: black;
+            text-decoration: underline;
+            font-size: 1.2rem;
+        }
+
+        .footer-navigation-links li a {
+            color: #4f2969;
+            font-weight: bold;
+            /*font-size: 1.1rem;*/
+        }
+
+.footer .copyright {
+    font-style: italic;
+    /*font-size: 1rem;*/
+}
+
+.footer .icon-attr {
+    font-size: 0.8rem;
+}
+
+
+
+
+/*media queries*/
+/*media query for navbar collapsing*/
+@media screen and (max-width: 900px) {
+    .navigation-links li:not(:first-child) {
+        display: none;
+    }
+
+    .navigation-links li.nav-mobile-icon-li {
+        float: right;
+        display: block;
+    }
+
+
+    .navigation-links.responsive {
+        position: relative;
+    }
+
+        .navigation-links.responsive li.nav-mobile-icon-li {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .navigation-links.responsive li {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+
+    .navigation-bar.responsive {
+        height:180px;
+    }
+}
+
+
+
+
+/*media query for biggest screen*/
+@media screen and (min-width: 1370px) {
+    .hero-content {
+        width: 70vw;
+    }
+
+        .hero-content i {
+            width: 3vw;
+            margin: 1rem auto;
+        }
+
+    .hero-img {
+        width: 250px;
+        height: 250px;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .hero-name {
+        font-size: 2rem;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .hero-title {
+        padding-top: 2rem;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .contact-email {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        margin-right: auto;
+        margin-left: auto;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+    }
+
+    .contact-phone {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        margin-right: auto;
+        margin-left: auto;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+    }
+
+
+    .about-container {
+        padding: 2rem 5% 2rem 5%;
+    }
+
+        .about-container .about-bio {
+            width: 80vw;
+        }
+
+        .about-container .about-header {
+            font-size: 2.2rem;
+        }
+
+        .about-container .about-subheadings {
+            font-size: 1.2rem;
+        }
+
+        .about-container ul {
+            font-size: 0.9rem;
+        }
+
+        .about-container .about-attributes {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            border: none;
+            padding-bottom: 1rem;
+        }
+
+        .about-container .about-competencies {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            border: none;
+            padding-bottom: 1rem;
+        }
+
+        .about-container .about-hobbies {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            border: none;
+        }
+
+    .techskills-container {
+        padding: 2rem 15% 2rem 15%;
+    }
+
+    .techskills-container .techskills-header {
+        font-size: 2.2rem;
+    }
+
+    .techskills-container .techskills-beginner {
+        font-size: 1.3rem;
+    }
+
+    .techskills-container .techskills-intro {
+        font-size: 1.3rem;
+    }
+
+        .techskills-container i {
+            height: 3rem;
+            width: 3rem;
+            margin: 1rem auto 0 auto;
+        }
+
+    .techskills-container .techskills-html {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .techskills-container .techskills-css {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+    .techskills-container .techskills-js {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .techskills-container .techskills-bootstrap {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+    .techskills-container .techskills-csharp {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .techskills-container .techskills-asp {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+    .techskills-container .techskills-vs {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .techskills-container .techskills-sqlserver {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .techskills-container .techskills-jquery {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+    .techskills-container .techskills-nodejs {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .techskills-container .techskills-mongodb {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+
+    .education-container {
+        display: block;
+    }
+
+        .education-container .education-header {
+            font-size: 2.2rem;
+        }
+
+        .education-container i {
+            height: 3rem;
+            width: 3rem;
+        }
+
+        .education-container .course-name {
+            font-size: 1.2rem;
+        }
+
+        .education-container .course-year {
+            font-size: 0.9rem;
+        }
+
+        .education-container .course-institution {
+            font-size: 1rem;
+        }
+
+
+    .work-container {
+        padding: 2rem 5% 2rem 5%;
+        display: grid;
+    }
+
+        .work-container i {
+            height: 3rem;
+            width: 3rem;
+        }
+
+        .work-container .work-title {
+            font-size: 1.2rem;
+        }
+
+        .work-container .work-company {
+            font-size: 1rem;
+        }
+
+        .work-container .work-dates {
+            font-size: 0.9rem;
+        }
+
+        .work-container .work-chemist {
+            margin-right: 0;
+        }
+
+        .work-container .work-labtech {
+            margin-left: 0;
+        }
+
+
+    .footer-navigation-links {
+        padding-left: 0;
+        margin-bottom: 1.6rem;
+    }
+
+        .footer-navigation-links li a {
+            font-size: 1rem;
+        }
+
+        .footer-navigation-links li {
+            padding: 0 1rem 0 0;
+        }
+
+    .footer .copyright {
+        font-size: 0.9rem;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+
+    .hero-content {
+        width: 85vw;
+    }
+
+        .hero-content i {
+            width: 3vw;
+            margin: 1rem auto;
+        }
+
+    .hero-img {
+        width: 250px;
+        height: 250px;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+
+    .hero-name {
+        font-size: 2.4rem;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .hero-title {
+        font-size: 1.1rem;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .contact-email {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        margin-left: auto;
+        margin-right: 2rem;
+    }
+
+    .contact-phone {
+        margin-right: auto;
+        margin-left: 2rem;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .about-container {
+        padding: 2rem 5% 2rem 5%;
+    }
+
+        .about-container .about-bio {
+            width: 60vw;
+        }
+
+        .about-container .about-subheadings {
+            font-size: 1.3rem;
+        }
+
+        .about-container .about-attributes {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            border-right: 0.1px solid #ccc5d1;
+        }
+
+        .about-container .about-competencies {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            border-right: 0.1px solid #ccc5d1;
+            padding-bottom: 2rem;
+        }
+
+        .about-container .about-hobbies {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            border: none;
+        }
+
+    .techskills-container {
+        padding: 2rem 15% 2rem 15%;
+    }
+
+    .techskills-container .techskills-beginner {
+        font-size: 1.4rem;
+    }
+
+    .techskills-container .techskills-intro {
+        font-size: 1.4rem;
+    }
+
+        .techskills-container i {
+            height: 3rem;
+            width: 3rem;
+            margin: 1rem auto 0 auto;
+        }
+
+    .techskills-container .techskills-html {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .techskills-container .techskills-css {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .techskills-container .techskills-js {
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+
+    .techskills-container .techskills-bootstrap {
+        grid-column-start: 4;
+        grid-column-end: 5;
+    }
+
+    .techskills-container .techskills-csharp {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .techskills-container .techskills-asp {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .techskills-container .techskills-vs {
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+
+    .techskills-container .techskills-sqlserver {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .techskills-container .techskills-jquery {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .techskills-container .techskills-nodejs {
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+
+    .techskills-container .techskills-mongodb {
+        grid-column-start: 4;
+        grid-column-end: 5;
+    }
+
+
+    .education-container {
+        display: grid;
+    }
+
+        .education-container i {
+            height: 3rem;
+            width: 3rem;
+        }
+
+        .education-container .course-name {
+            font-size: 1.3rem;
+        }
+
+        .education-container .course-year {
+            font-size: 1rem;
+        }
+
+        .education-container .course-institution {
+            font-size: 1.1rem;
+        }
+
+
+    .work-container {
+        padding: 2rem 15% 2rem 15%;
+        display: grid;
+    }
+
+        .work-container i {
+            height: 3rem;
+            width: 3rem;
+        }
+
+
+        .work-container .work-title {
+            font-size: 1.4rem;
+        }
+
+        .work-container .work-company {
+            font-size: 1.1rem;
+        }
+
+        .work-container .work-dates {
+            font-size: 1rem;
+        }
+
+        .work-container .work-chemist {
+            margin-right: 2rem;
+        }
+
+        .work-container .work-labtech {
+            margin-left: 2rem;
+        }
+
+
+    .footer-navigation-links {
+        margin-bottom: 2rem;
+    }
+
+        .footer-navigation-links li a {
+            font-size: 1.1rem;
+        }
+
+        .footer-navigation-links li {
+            padding: 0 2rem 0 0;
+        }
+
+    .footer .copyright {
+        font-size: 1rem;
+    }
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .hero-content {
+        width: 90vw;
+    }
+
+        .hero-content i {
+            width: 5vw;
+            margin: 1rem auto;
+        }
+
+    .hero-img {
+        width: 250px;
+        height: 250px;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+
+    .hero-name {
+        font-size: 2rem;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .hero-title {
+        font-size: 1.1rem;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .contact-email {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .contact-phone {
+        margin-right: auto;
+        margin-left: 2rem;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+
+    .about-container {
+        padding: 2rem 5% 2rem 5%;
+    }
+
+        .about-container .about-bio {
+            width: 60vw;
+        }
+
+        .about-container .about-subheadings {
+            font-size: 1.3rem;
+        }
+
+        .about-container .about-attributes {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            border-right: 0.1px solid #ccc5d1;
+        }
+
+        .about-container .about-competencies {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            border-right: 0.1px solid #ccc5d1;
+            padding-bottom: 2rem;
+        }
+
+        .about-container .about-hobbies {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            border: none;
+        }
+
+    .techskills-container {
+        padding: 2rem 15% 2rem 15%;
+    }
+
+        .techskills-container i {
+            height: 3rem;
+            width: 3rem;
+            margin: 1rem auto 0 auto;
+        }
+
+    .techskills-container .techskills-beginner {
+        font-size: 1.4rem;
+    }
+
+    .techskills-container .techskills-intro {
+        font-size: 1.4rem;
+    }
+
+    .techskills-container .techskills-html {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .techskills-container .techskills-css {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .techskills-container .techskills-js {
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+
+    .techskills-container .techskills-bootstrap {
+        grid-column-start: 4;
+        grid-column-end: 5;
+    }
+
+    .techskills-container .techskills-csharp {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .techskills-container .techskills-asp {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .techskills-container .techskills-vs {
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+
+    .techskills-container .techskills-sqlserver {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .techskills-container .techskills-jquery {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .techskills-container .techskills-nodejs {
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+
+    .techskills-container .techskills-mongodb {
+        grid-column-start: 4;
+        grid-column-end: 5;
+    }
+
+    .projects-container .projects-tributepg {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .projects-container .projects-funpg {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+    .projects-container .projects-counterpg {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+
+    .education-container {
+        display: grid;
+    }
+
+        .education-container i {
+            height: 3rem;
+            width: 3rem;
+        }
+
+    .education-container .course-name {
+        font-size: 1.3rem;
+    }
+
+    .education-container .course-year {
+        font-size: 1rem;
+    }
+
+    .education-container .course-institution {
+        font-size: 1.1rem;
+    }
+
+    .work-container {
+        padding: 2rem 15% 2rem 15%;
+        display: grid;
+    }
+
+        .work-container i {
+            height: 3rem;
+            width: 3rem;
+        }
+
+        
+
+    .work-container .work-title {
+        font-size: 1.2rem;
+    }
+
+    .work-container .work-company {
+        font-size: 1rem;
+    }
+
+    .work-container .work-dates {
+        font-size: 0.9rem;
+    }
+
+        .work-container .work-chemist {
+            margin-right: 2rem;
+        }
+
+        .work-container .work-labtech {
+            margin-left: 2rem;
+        }
+
+
+    .footer-navigation-links {
+        padding-left: 0;
+        margin-bottom: 1rem;
+    }
+
+    .footer-navigation-links li a {
+        font-size: 0.9rem;
+    }
+
+    .footer-navigation-links li {
+        padding: 0 1rem 0 0;
+    }
+
+    .footer .copyright {
+        font-size: 0.9rem;
+    }
+
+}
+
+
+
+/*media query for small screens*/
+@media screen and (max-width: 768px){
+    .hero-content {
+        width: 100vw;
+    }
+
+        .hero-content i {
+            width: 6vw;
+            margin: 0 auto;
+        }
+
+    .hero-img {
+        width: 250px;
+        height: 250px;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .hero-name {
+        font-size: 2rem;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .hero-title {
+        padding-top: 2rem;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .contact-email {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        margin-right: auto;
+        margin-left: auto;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+    }
+
+    .contact-phone {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+    .about-container {
+        padding: 2rem 5% 2rem 5%;
+    }
+
+    .about-container .about-bio {
+        width: 80vw;
+    }
+
+    .about-container .about-header {
+        font-size: 2.2rem;
+    }
+
+    .about-container .about-subheadings {
+        font-size: 1.2rem;
+    }
+
+    .about-container ul {
+        font-size: 0.9rem;
+    }
+
+    .about-container .about-attributes {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        border: none;
+        padding-bottom: 1rem;
+    }
+
+    .about-container .about-competencies {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        border: none;
+        padding-bottom: 1rem;
+    }
+
+    .about-container .about-hobbies {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        border: none;
+    }
+
+
+
+    .techskills-container .techskills-header {
+        font-size: 2.2rem;
+    }
+
+    .techskills-container .techskills-beginner {
+        font-size: 1.3rem;
+    }
+
+    .techskills-container .techskills-intro {
+        font-size: 1.3rem;
+    }
+
+    .techskills-container {
+        padding: 2rem 15% 2rem 15%;
+    }
+
+
+        .techskills-container i {
+            height: 3rem;
+            width: 3rem;
+            margin: 1rem auto 0 auto;
+        }
+
+    .techskills-container .techskills-html {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .techskills-container .techskills-css {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+    .techskills-container .techskills-js {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .techskills-container .techskills-bootstrap {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+    .techskills-container .techskills-csharp {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .techskills-container .techskills-asp {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+    .techskills-container .techskills-vs {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .techskills-container .techskills-sqlserver {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .techskills-container .techskills-jquery {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+    .techskills-container .techskills-nodejs {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .techskills-container .techskills-mongodb {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+    .projects-container .projects-header {
+        font-size: 2.2rem;
+    }
+
+    .education-container {
+        display: block;
+    }
+
+    .education-container .education-header {
+        font-size: 2.2rem;
+    }
+
+        .education-container i {
+            height: 3rem;
+            width: 3rem;
+        }
+
+    .education-container .course-name {
+        font-size: 1.2rem;
+    }
+
+    .education-container .course-year {
+        font-size: 0.9rem;
+    }
+
+    .education-container .course-institution {
+        font-size: 1rem;
+    }
+
+
+    .work-container {
+        padding: 2rem 5% 2rem 5%;
+        display: block;
+    }
+
+        .work-container i {
+            height: 3rem;
+            width: 3rem;
+        }
+
+        .work-container .work-header {
+            font-size: 2.2rem;
+        }
+
+    .work-container .work-title {
+        font-size: 1.2rem;
+    }
+
+    .work-container .work-company {
+        font-size: 1rem;
+    }
+
+    .work-container .work-dates {
+        font-size: 0.9rem;
+    }
+
+    .work-container .work-chemist {
+        margin-right: 0;
+    }
+
+    .work-container .work-labtech {
+        margin-left: 0;
+    }
+
+
+    .footer-navigation-links {
+        padding-left: 0;
+        margin-bottom: 1.6rem;
+    }
+
+        .footer-navigation-links li a {
+            font-size: 1rem;
+        }
+
+        .footer-navigation-links li {
+            padding: 0 1rem 0 0;
+        }
+
+    .footer .copyright {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+/*media query for small screens*/
+@media screen and (max-width: 576px) {
+    .hero-content {
+        width: 100vw;
+    }
+
+        .hero-content i {
+            width: 6vw;
+            margin: 0 auto;
+        }
+
+    .hero-img {
+        width: 250px;
+        height: 250px;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .hero-name {
+        font-size: 1.4rem;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .hero-title {
+        padding-top: 2rem;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .contact-email {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        margin-right: auto;
+        margin-left: auto;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+    }
+
+    .contact-phone {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+    .about-container {
+        padding: 2rem 5% 2rem 5%;
+    }
+
+        .about-container .about-bio {
+            width: 80vw;
+        }
+
+        .about-container .about-header {
+            font-size: 2.2rem;
+        }
+
+        .about-container .about-subheadings {
+            font-size: 1.2rem;
+        }
+
+        .about-container ul {
+            font-size: 0.9rem;
+        }
+
+        .about-container .about-attributes {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            border: none;
+            padding-bottom: 1rem;
+        }
+
+        .about-container .about-competencies {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            border: none;
+            padding-bottom: 1rem;
+        }
+
+        .about-container .about-hobbies {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            border: none;
+        }
+
+
+
+    .techskills-container .techskills-header {
+        font-size: 2.2rem;
+    }
+
+    .techskills-container .techskills-beginner {
+        font-size: 1.3rem;
+    }
+
+    .techskills-container .techskills-intro {
+        font-size: 1.3rem;
+    }
+
+    .techskills-container {
+        padding: 2rem 5% 2rem 5%;
+    }
+
+        .techskills-container i {
+            height: 3rem;
+            width: 3rem;
+            margin: 1rem auto 0 auto;
+        }
+
+    .techskills-container .techskills-html {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .techskills-container .techskills-css {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+    .techskills-container .techskills-js {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .techskills-container .techskills-bootstrap {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+    .techskills-container .techskills-csharp {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .techskills-container .techskills-asp {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+    .techskills-container .techskills-vs {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .techskills-container .techskills-sqlserver {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .techskills-container .techskills-jquery {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+    .techskills-container .techskills-nodejs {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .techskills-container .techskills-mongodb {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+
+    .projects-container .projects-header {
+        font-size: 2.2rem;
+    }
+
+    .projects-container .projects-tributepg {
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+    .projects-container .projects-funpg {
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+    .projects-container .projects-counterpg {
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+
+    .education-container {
+        display: block;
+    }
+
+        .education-container .education-header {
+            font-size: 2.2rem;
+        }
+
+        .education-container i {
+            height: 3rem;
+            width: 3rem;
+        }
+
+        .education-container .course-name {
+            font-size: 1.2rem;
+        }
+
+        .education-container .course-year {
+            font-size: 0.9rem;
+        }
+
+        .education-container .course-institution {
+            font-size: 1rem;
+        }
+
+
+    .work-container {
+        padding: 2rem 5% 2rem 5%;
+        display: block;
+    }
+
+    .work-container .work-header {
+        font-size: 2.2rem;
+    }
+
+        .work-container i {
+            height: 3rem;
+            width: 3rem;
+        }
+
+        .work-container .work-title {
+            font-size: 1.2rem;
+        }
+
+        .work-container .work-company {
+            font-size: 1rem;
+        }
+
+        .work-container .work-dates {
+            font-size: 0.9rem;
+        }
+
+        .work-container .work-chemist {
+            margin-right: 0;
+        }
+
+        .work-container .work-labtech {
+            margin-left: 0;
+        }
+
+    .footer {
+        height: 150px;
+    }
+
+    .footer-navigation-links {
+        padding-left: 0;
+        margin-bottom: 1.6rem;
+    }
+
+        .footer-navigation-links li a {
+            font-size: 1rem;
+        }
+
+        .footer-navigation-links li {
+            padding: 0 1rem 0 0;
+        }
+
+    .footer .copyright {
+        font-size: 0.9rem;
+    }
+} 
+
+
