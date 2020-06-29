@@ -1,0 +1,77 @@
+body {
+    background-color: gray;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#backbtn {
+    margin-bottom: 15px;
+    border: 1px solid floralwhite;
+    width: 120px;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+    #backbtn a {
+        text-decoration: none;
+    }
+
+#main-heading {
+    background-color: rgb(253, 242, 224);
+    border-radius: 15px;
+}
+
+#title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px grey;
+}
+
+#birth-death {
+    font-style: italic;
+    margin-bottom: 2rem;
+    padding-bottom: 5px;
+}
+
+img {
+    width: 30%;
+    box-shadow: 5px 5px 5px darkgrey;
+    border-radius: 20px;
+    border-top: 2px solid darkgray;
+    border-left: 2px solid darkgray;
+}
+
+figcaption {
+    font-size: 0.8rem;
+}
+
+#tribute-info {
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+.heading {
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px darkgrey;
+    border-top: 1px solid darkgray;
+    border-bottom: 1px solid darkgray;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    background-color: rgb(253, 242, 224);
+    border-radius: 15px;
+}
+
+#tribute-info p:nth-of-type(odd) {
+    padding-bottom: 1.5rem;
+    color: rgb(253, 242, 224);
+}
+
+#tribute-info p:nth-of-type(even) {
+    padding-bottom: 1.5rem;
+    color: lightgray;
+}
+
+a {
+    color: whitesmoke;
+}
