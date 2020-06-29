@@ -426,14 +426,17 @@ i:hover {
 
     .projects-tributepg:hover .overlay {
         opacity: 0.8;
+        cursor: pointer;
     }
 
     .projects-funpg:hover .overlay {
         opacity: 0.8;
+        cursor: pointer;
     }
 
 .projects-counterpg:hover .overlay {
     opacity: 0.8;
+    cursor: pointer;
 }
 
     .overlay-text {
@@ -589,13 +592,8 @@ i:hover {
         margin-bottom: 0;
     }
 
-    /* .work-container .work-dates {
-        /*font-size: 1rem;
-    } */
 
     .work-container i {
-        /*width: 5vw;
-            height: 8vh;*/
         display: block;
         background-repeat: no-repeat;
         margin: 2rem auto 0 auto;
@@ -655,10 +653,11 @@ i:hover {
 .footer .copyright {
     font-style: italic;
     /*font-size: 1rem;*/
+    margin-bottom: 5px;
 }
 
 .footer .icon-attr {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
 

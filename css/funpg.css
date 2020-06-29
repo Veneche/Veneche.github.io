@@ -1,0 +1,285 @@
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+#main-content {
+}
+
+#backbtn {
+    width: 140px;
+    border-radius: 5px;
+    padding: 4px;
+    top: 20px;
+    left: 10px;
+    position: relative;
+}
+
+    #backbtn a {
+        text-decoration: none;
+        color: white;
+    }
+
+#heading {
+    background-color: teal;
+    width: 100%;
+    height: 40vh;
+    text-align: center;
+    text-shadow: 2px 2px 5px lightgrey;
+    transform: skewY(0.5deg);
+}
+
+    #heading:hover #title {
+        animation-name: rotate;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+    }
+
+@keyframes rotate {
+    25% {
+        transform: rotate(15deg);
+    }
+    /* 50% {
+        transform: rotate(0deg);
+    } */
+    75% {
+        transform: rotate(-15deg);
+    }
+}
+
+#title {
+    padding-top: 10vh;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#subtitle {
+    font-size: 1.8rem;
+}
+
+
+#colour-change {
+    width: 100%;
+    height: 40vh;
+    background: linear-gradient(45deg, #c171fa, #2918a8);
+    text-align: center;
+    transform: skewY(-0.5deg);
+}
+
+    #colour-change p {
+        font-size: 2rem;
+        padding-top: 17vh;
+        font-weight: bold;
+        color: chartreuse;
+        height: 100%;
+    }
+
+
+    #colour-change:hover {
+        animation-name: colour-change;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    #colour-change p:hover {
+        animation-name: colour-change-text;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+
+@keyframes colour-change {
+    50% {
+        background: linear-gradient(180deg, #dce683, #46ddf1);
+    }
+}
+
+@keyframes colour-change-text {
+    50% {
+        color: darkblue;
+        font-size: 2.5rem;
+    }
+}
+
+
+#fade {
+    width: 100%;
+    height: 40vh;
+    background-color: black;
+    text-align: center;
+    transform: skewY(0.5deg);
+}
+
+    #fade p {
+        font-size: 2rem;
+        padding-top: 17vh;
+        font-weight: bold;
+        color: white;
+    }
+
+    #fade:hover {
+        animation-name: fade;
+        animation-duration: 2s;
+    }
+
+@keyframes fade {
+    50% {
+        opacity: 0.1;
+    }
+}
+
+
+#slide {
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(247, 248, 184);
+    text-align: center;
+    transform: skewY(-0.5deg);
+}
+
+    #slide p {
+        font-size: 2rem;
+        font-weight: bold;
+        color: rgb(30, 38, 53);
+        height: 20%;
+        position: relative;
+        top: 35%;
+        left: 10%;
+        padding-top: 2.1rem;
+        width: 30vw;
+        background-color: darkcyan;
+        border-radius: 55px;
+        box-shadow: 2px 2px 5px black;
+    }
+
+    #slide:hover p {
+        animation-name: slide;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+    }
+
+@keyframes slide {
+    50% {
+        left: 55%;
+    }
+}
+
+#bounce {
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(36, 42, 121);
+    text-align: center;
+    transform: skewY(0.5deg);
+}
+
+    #bounce #one {
+        font-size: 2rem;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+        height: 25%;
+        position: relative;
+        top: 3%;
+        left: 45%;
+        padding-top: 2%;
+        width: 140px;
+        background-color: rgb(110, 248, 248);
+        border-radius: 50%;
+        margin-top: 32px;
+        box-shadow: 2px 2px 5px black;
+    }
+
+    #bounce:hover #one {
+        animation-name: bounce1;
+        animation-duration: 2.1s;
+    }
+
+@keyframes bounce1 {
+    0% {
+        top: 2%;
+    }
+
+    50% {
+        top: 70%;
+        width: 170px;
+        height: 15%;
+    }
+
+    100% {
+        top: 2%;
+    }
+}
+
+#bounce #two {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    height: 21%;
+    position: relative;
+    top: -20%;
+    left: 25%;
+    padding-top: 2%;
+    width: 110px;
+    background-color: rgb(154, 248, 110);
+    border-radius: 50%;
+    margin-top: 32px;
+    float: left;
+    box-shadow: 2px 2px 5px black;
+}
+
+#bounce:hover #two {
+    animation-name: bounce2;
+    animation-duration: 1.9s;
+}
+
+@keyframes bounce2 {
+    0% {
+        top: -20%;
+    }
+
+    50% {
+        top: 40%;
+        width: 160px;
+        height: 11%;
+    }
+
+    100% {
+        top: -20%;
+    }
+}
+
+#bounce #three {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    height: 15%;
+    position: relative;
+    top: -10%;
+    left: 65%;
+    padding-top: 2%;
+    width: 100px;
+    background-color: rgb(248, 110, 214);
+    border-radius: 50%;
+    margin-top: 32px;
+    box-shadow: 2px 2px 5px black;
+}
+
+#bounce:hover #three {
+    animation-name: bounce3;
+    animation-duration: 2.4s;
+}
+
+@keyframes bounce3 {
+    0% {
+        top: -10%;
+    }
+
+    50% {
+        top: 45%;
+        width: 140px;
+        height: 5%;
+    }
+
+    100% {
+        top: -10%;
+    }
+}
