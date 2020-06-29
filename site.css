@@ -595,8 +595,13 @@ i:hover {
     } */
 
     .work-container i {
-        /*width: 5vw;
-            height: 8vh;*/
+        display: block;
+        background-repeat: no-repeat;
+        margin: 2rem auto 0 auto;
+        background-size: contain;
+    }
+
+    .work-developer i {
         display: block;
         background-repeat: no-repeat;
         margin: 2rem auto 0 auto;
