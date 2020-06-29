@@ -16,6 +16,10 @@ body {
         text-decoration: none;
     }
 
+    #backbtn a:hover {
+        cursor: pointer;
+    }
+
 #main-heading {
     background-color: rgb(253, 242, 224);
     border-radius: 15px;
