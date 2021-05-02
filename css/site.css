@@ -556,6 +556,12 @@ i:hover {
         animation-fill-mode: forwards;
     }
 
+    .work-container .work-ecommerce {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        margin-left: auto;
+    }
+
     .work-container .work-developer {
         grid-column-start: 1;
         grid-column-end: 3;
@@ -925,6 +931,10 @@ i:hover {
             font-size: 0.9rem;
         }
 
+        .work-container .work-ecommerce {
+            margin-right: 0;
+        }
+
         .work-container .work-chemist {
             margin-right: 0;
         }
@@ -1155,6 +1165,10 @@ i:hover {
 
         .work-container .work-dates {
             font-size: 1rem;
+        }
+
+        .work-container .work-ecommerce {
+            margin-right: 2rem;
         }
 
         .work-container .work-chemist {
@@ -1400,6 +1414,10 @@ i:hover {
 
     .work-container .work-dates {
         font-size: 0.9rem;
+    }
+
+    .work-container .work-ecommerce {
+        margin-right: 2rem;
     }
 
         .work-container .work-chemist {
@@ -1663,6 +1681,10 @@ i:hover {
 
     .work-container .work-dates {
         font-size: 0.9rem;
+    }
+
+    .work-container .work-ecommerce {
+        margin-right: 0;
     }
 
     .work-container .work-chemist {
@@ -1942,6 +1964,10 @@ i:hover {
 
         .work-container .work-dates {
             font-size: 0.9rem;
+        }
+
+        .work-container .work-ecommerce {
+            margin-right: 0;
         }
 
         .work-container .work-chemist {
