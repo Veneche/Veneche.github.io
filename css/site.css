@@ -559,26 +559,26 @@ i:hover {
     .work-container .work-ecommerce {
         grid-column-start: 1;
         grid-column-end: 2;
-        margin-left: auto;
+        /* margin-left: auto; */
     }
 
     .work-container .work-developer {
         grid-column-start: 2;
         grid-column-end: 3;
-        margin-right: auto;
+        /* margin-right: auto; */
     }
 
     .work-container .work-chemist {
         grid-column-start: 1;
         grid-column-end: 2;
-        margin-left: auto;
+        /* margin-left: auto; */
         /*margin-right: 2rem;*/
     }
 
     .work-container .work-labtech {
         grid-column-start: 2;
         grid-column-end: 3;
-        margin-right: auto;
+        /* margin-right: auto; */
         /*margin-left: 2rem;*/
     }
 
@@ -932,7 +932,7 @@ i:hover {
             font-size: 0.9rem;
         }
 
-        .work-container .work-ecommerce {
+        /* .work-container .work-ecommerce {
             margin-right: 0;
         }
 
@@ -942,7 +942,7 @@ i:hover {
 
         .work-container .work-labtech {
             margin-left: 0;
-        }
+        } */
 
 
     .footer-navigation-links {
@@ -1168,7 +1168,7 @@ i:hover {
             font-size: 1rem;
         }
 
-        .work-container .work-ecommerce {
+        /* .work-container .work-ecommerce {
             margin-right: 2rem;
         }
 
@@ -1178,7 +1178,7 @@ i:hover {
 
         .work-container .work-labtech {
             margin-left: 2rem;
-        }
+        } */
 
 
     .footer-navigation-links {
@@ -1417,7 +1417,7 @@ i:hover {
         font-size: 0.9rem;
     }
 
-    .work-container .work-ecommerce {
+    /* .work-container .work-ecommerce {
         margin-right: 2rem;
     }
 
@@ -1427,7 +1427,7 @@ i:hover {
 
         .work-container .work-labtech {
             margin-left: 2rem;
-        }
+        } */
 
 
     .footer-navigation-links {
@@ -1684,7 +1684,7 @@ i:hover {
         font-size: 0.9rem;
     }
 
-    .work-container .work-ecommerce {
+    /* .work-container .work-ecommerce {
         margin-right: 0;
     }
 
@@ -1694,7 +1694,7 @@ i:hover {
 
     .work-container .work-labtech {
         margin-left: 0;
-    }
+    } */
 
 
     .footer-navigation-links {
@@ -1967,7 +1967,7 @@ i:hover {
             font-size: 0.9rem;
         }
 
-        .work-container .work-ecommerce {
+        /* .work-container .work-ecommerce {
             margin-right: 0;
         }
 
@@ -1977,7 +1977,7 @@ i:hover {
 
         .work-container .work-labtech {
             margin-left: 0;
-        }
+        } */
 
     .footer {
         height: 150px;
