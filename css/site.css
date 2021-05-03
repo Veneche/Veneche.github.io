@@ -337,9 +337,9 @@ i:hover {
     background-color: #4f2969;
     color: #f3f0f5;
     text-align: center;
-    padding: 2rem 15% 2rem 15%;
+    padding: 2rem 10% 2rem 10%;
     display: grid;
-    grid-template-columns: 270px 270px 270px 270px;
+    grid-template-columns: 25% 25% 25% 25%;
     padding-bottom: 5rem;
     grid-gap: 10px;
 }
@@ -1120,6 +1120,11 @@ i:hover {
     .techskills-container .techskills-mongodb {
         grid-column-start: 4;
         grid-column-end: 5;
+    }
+
+
+    .projects-container {
+        display: grid;
     }
 
 
